@@ -14,9 +14,12 @@
         />
         <style>
             :root {
-                --bg-color: #121212;
-                --text-color: #f1f1f1;
-                --secondary-text-color: #b3b3b3;
+                --bg-color: #0d1117;
+                --card-bg: #161b22;
+                --border-color: #30363d;
+                --text-color: #c9d1d9;
+                --secondary-text-color: #8b949e;
+                --accent-blue: #2f81f7;
             }
             body {
                 display: flex;
@@ -28,9 +31,17 @@
                 font-family: Arial, sans-serif;
                 margin: 0;
                 text-align: center;
+                color: var(--text-color);
                 transition:
                     background-color 0.3s ease,
                     color 0.3s ease;
+            }
+            main {
+                background: var(--card-bg);
+                border: 1px solid var(--border-color);
+                border-radius: 8px;
+                padding: 2rem 2.5rem;
+                box-shadow: 0 2px 8px 0 #01040940;
             }
             img {
                 max-width: 300px;
@@ -44,7 +55,14 @@
                 font-size: 1rem;
                 color: var(--secondary-text-color);
             }
+            a {
+                color: var(--accent-blue);
+                text-decoration: underline;
+            }
             @media (max-width: 600px) {
+                main {
+                    padding: 1rem 0.5rem;
+                }
                 h1 {
                     font-size: 1.5rem;
                 }
