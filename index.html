@@ -4,13 +4,20 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>503 Stack</title>
+        <meta
+            name="description"
+            content="A light-hearted infrastructure project for GitOps and homelabs."
+        />
+        <meta
+            name="keywords"
+            content="GitOps, homelabs, infrastructure, 503stack"
+        />
         <style>
             :root {
                 --bg-color: #121212;
                 --text-color: #f1f1f1;
                 --secondary-text-color: #b3b3b3;
             }
-
             body {
                 display: flex;
                 flex-direction: column;
@@ -21,7 +28,9 @@
                 font-family: Arial, sans-serif;
                 margin: 0;
                 text-align: center;
-                transition: background-color 0.3s ease, color 0.3s ease;
+                transition:
+                    background-color 0.3s ease,
+                    color 0.3s ease;
             }
             img {
                 max-width: 300px;
@@ -35,17 +44,31 @@
                 font-size: 1rem;
                 color: var(--secondary-text-color);
             }
-
+            @media (max-width: 600px) {
+                h1 {
+                    font-size: 1.5rem;
+                }
+                p {
+                    font-size: 0.875rem;
+                }
+                img {
+                    max-width: 200px;
+                }
+            }
         </style>
     </head>
     <body>
-
-        <img src="503stack.png" alt="503 Stack Avatar" />
-        <h1>503 Stack</h1>
-        <p>
-            A light-hearted infrastructure project built for GitOps and
-            homelabs.
-        </p>
-
+        <main>
+            <img
+                src="503stack.png"
+                alt="Cartoon-style server stack logo representing 503 Stack project"
+                loading="lazy"
+            />
+            <h1>503 Stack</h1>
+            <p>
+                A light-hearted infrastructure project built for GitOps and
+                homelabs.
+            </p>
+        </main>
     </body>
 </html>
